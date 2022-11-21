@@ -21,16 +21,16 @@ namespace ContosoUniversity.Pages.Students
         }
 
         [BindProperty]
-        public Student Student { get; set; } = default!;
+        public Models.Students Student { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Student == null)
+            if (id == null || _context.Students == null)
             {
                 return NotFound();
             }
 
-            var student =  await _context.Student.FirstOrDefaultAsync(m => m.ID == id);
+            var student =  await _context.Students.FirstOrDefaultAsync(m => m.ID == id);
             if (student == null)
             {
                 return NotFound();
@@ -71,7 +71,7 @@ namespace ContosoUniversity.Pages.Students
 
         private bool StudentExists(int id)
         {
-          return _context.Student.Any(e => e.ID == id);
+          return _context.Students.Any(e => e.ID == id);
         }
     }
 }

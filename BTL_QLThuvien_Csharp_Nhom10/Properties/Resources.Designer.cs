@@ -343,6 +343,16 @@ namespace BTL_QLThuvien_Csharp_Nhom10.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_to_green_by_jesssaysno_df3mfpl {
+            get {
+                object obj = ResourceManager.GetObject("blue_to_green_by_jesssaysno_df3mfpl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap book {
             get {
                 object obj = ResourceManager.GetObject("book", resourceCulture);

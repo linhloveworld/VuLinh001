@@ -69,7 +69,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.button2.Size = new System.Drawing.Size(95, 46);
             this.button2.TabIndex = 30;
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // btndangky
             // 
@@ -106,23 +106,24 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btndangky.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndangky.Textcolor = System.Drawing.Color.White;
             this.btndangky.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndangky.Click += new System.EventHandler(this.btndangky_Click);
             // 
             // txtlmk
             // 
             this.txtlmk.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtlmk.Location = new System.Drawing.Point(415, 285);
             this.txtlmk.Name = "txtlmk";
+            this.txtlmk.PasswordChar = '*';
             this.txtlmk.Size = new System.Drawing.Size(100, 22);
             this.txtlmk.TabIndex = 3;
-            this.txtlmk.PasswordChar = '*';
             // 
             // txtmk
             // 
             this.txtmk.Location = new System.Drawing.Point(415, 198);
             this.txtmk.Name = "txtmk";
+            this.txtmk.PasswordChar = '*';
             this.txtmk.Size = new System.Drawing.Size(100, 22);
             this.txtmk.TabIndex = 2;
-            this.txtmk.PasswordChar = '*';
             // 
             // txttentk
             // 
@@ -172,10 +173,12 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             // lblthongbao
             // 
             this.lblthongbao.AutoSize = true;
-            this.lblthongbao.Location = new System.Drawing.Point(113, 66);
+            this.lblthongbao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblthongbao.Location = new System.Drawing.Point(687, 60);
             this.lblthongbao.Name = "lblthongbao";
-            this.lblthongbao.Size = new System.Drawing.Size(0, 21);
+            this.lblthongbao.Size = new System.Drawing.Size(78, 17);
             this.lblthongbao.TabIndex = 36;
+            this.lblthongbao.Text = "Notification";
             // 
             // checkBox1
             // 
@@ -187,7 +190,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.checkBox1.TabIndex = 31;
             this.checkBox1.Text = "hiện mật khẩu";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // frmdangky
             // 
@@ -207,6 +210,8 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.Controls.Add(this.button2);
             this.Name = "frmdangky";
             this.Text = "frmdangky";
+            this.Load += new System.EventHandler(this.frmdangky_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmdangky_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

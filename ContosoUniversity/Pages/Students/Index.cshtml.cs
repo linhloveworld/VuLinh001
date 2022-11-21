@@ -19,13 +19,13 @@ namespace ContosoUniversity.Pages.Students
             _context = context;
         }
 
-        public IList<Student> Student { get;set; } = default!;
+        public IList<Models.Students> Student { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Student != null)
+            if (_context.Students != null)
             {
-                Student = await _context.Student.ToListAsync();
+                Student = await _context.Students.ToListAsync();
             }
         }
     }

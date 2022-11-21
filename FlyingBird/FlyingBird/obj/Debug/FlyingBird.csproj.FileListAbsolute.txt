@@ -1,0 +1,11 @@
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.Form1.resources
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.Properties.Resources.resources
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\bin\Debug\FlyingBird.exe.config
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\bin\Debug\FlyingBird.exe
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\bin\Debug\FlyingBird.pdb
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.exe
+C:\Users\admin\source\repos\My-Asp.NET_MVC\FlyingBird\FlyingBird\obj\Debug\FlyingBird.pdb

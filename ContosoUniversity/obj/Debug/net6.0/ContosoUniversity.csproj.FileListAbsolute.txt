@@ -261,3 +261,4 @@ C:\Users\admin\source\repos\ContosoUniversity\obj\Debug\net6.0\refint\ContosoUni
 C:\Users\admin\source\repos\ContosoUniversity\obj\Debug\net6.0\ContosoUniversity.pdb
 C:\Users\admin\source\repos\ContosoUniversity\obj\Debug\net6.0\ContosoUniversity.genruntimeconfig.cache
 C:\Users\admin\source\repos\ContosoUniversity\obj\Debug\net6.0\ref\ContosoUniversity.dll
+C:\Users\admin\source\repos\ContosoUniversity\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

@@ -16,6 +16,6 @@ namespace ContosoUniversity.Models
         public Grade? Grade { get; set; }
 
         public Course Course { get; set; }
-        public Student Student { get; set; }
+        public Students Student { get; set; }
     }
 }
