@@ -75,6 +75,36 @@
     <Compile Include="frmPhieumuonsach.Designer.cs">
       <DependentUpon>frmPhieumuonsach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPhieuNhacTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhacTra.Designer.cs">
+      <DependentUpon>frmPhieuNhacTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSach.Designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSachmuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSachmuon.Designer.cs">
+      <DependentUpon>frmSachmuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmthethuvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthethuvien.Designer.cs">
+      <DependentUpon>frmthethuvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtimkiemsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimkiemsach.Designer.cs">
+      <DependentUpon>frmtimkiemsach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giaodien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +124,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieumuonsach.resx">
       <DependentUpon>frmPhieumuonsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhacTra.resx">
+      <DependentUpon>frmPhieuNhacTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSach.resx">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSachmuon.resx">
+      <DependentUpon>frmSachmuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthethuvien.resx">
+      <DependentUpon>frmthethuvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimkiemsach.resx">
+      <DependentUpon>frmtimkiemsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Giaodien.resx">
       <DependentUpon>Giaodien.cs</DependentUpon>

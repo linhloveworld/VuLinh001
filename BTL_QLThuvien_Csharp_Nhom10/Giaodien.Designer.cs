@@ -202,7 +202,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
             this.bunifuMetroTextbox1.Size = new System.Drawing.Size(296, 40);
             this.bunifuMetroTextbox1.TabIndex = 8;
-            this.bunifuMetroTextbox1.Text = "Tài khoản người dùng";
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMetroTextbox2
@@ -220,7 +219,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
             this.bunifuMetroTextbox2.Size = new System.Drawing.Size(296, 40);
             this.bunifuMetroTextbox2.TabIndex = 9;
-            this.bunifuMetroTextbox2.Text = "Mật khẩu ";
             this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuFlatButton1
@@ -246,7 +244,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(479, 261);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(479, 255);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
@@ -267,7 +265,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuCheckbox1.Checked = true;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(795, 212);
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(808, 213);
             this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCheckbox1.Name = "bunifuCheckbox1";
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);

@@ -15,11 +15,11 @@ namespace BTL_QLThuvien_Csharp_Nhom10
     {
         string A;
         SqlConnection con;
-     
         public frmNhanVien()
         {
             InitializeComponent();
-            con = new SqlConnection("Data Source=.;Initial Catalog=QLThuVien;Integrated Security=True");
+            con = new SqlConnection("DataSource = THINKPADE14;" +
+                "Initial Catalog=. ;" + "Intergrated Security=True");
         }
 
         private void txtTennv_OnValueChanged(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private DataTable docdulieu()
         {
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText "sp_LOADNHANVIEN";
+            cmd.CommandText = "sp_LOADNHANVIEN";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = con;
             DataTable nhanvien = new DataTable();
@@ -390,7 +390,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
                 this.Close();
             }
         }
-
+        #region chay chu tieu de
         private void timer1_Tick(object sender, EventArgs e)
         {
             int d = 0, x;
@@ -404,7 +404,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
                 timer1.Stop();
             }
         }
-
+        #endregion
         private void txtpage_TextChanged(object sender, EventArgs e)
         {
             loadnvtodatagridview();

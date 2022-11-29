@@ -27,7 +27,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             loaddlthethuvien();
             A = lbl19.Text;
             lbl19.Text = "";
-            timer1.Start();
+            //timer1.Start();
             data_binding();
             hienthiphieudautien();
         }
