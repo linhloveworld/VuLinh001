@@ -57,6 +57,12 @@
     <Compile Include="frmdangky.Designer.cs">
       <DependentUpon>frmdangky.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmmuontrasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmuontrasach.Designer.cs">
+      <DependentUpon>frmmuontrasach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmdangky.resx">
       <DependentUpon>frmdangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmuontrasach.resx">
+      <DependentUpon>frmmuontrasach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
