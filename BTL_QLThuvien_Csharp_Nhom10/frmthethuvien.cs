@@ -73,7 +73,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             dtgttthethuvien.Columns[6].HeaderText = "Ngaylapthe";
             dtgttthethuvien.Columns[7].HeaderText = "Ngaythehethan";
         }
-        private DataTable loadthetv()
+        public DataTable loadthetv()
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "sp_LOADTHETHUVIEN";
