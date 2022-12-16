@@ -16,8 +16,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmtimkiemsach()
         {
             InitializeComponent();
-            cnn = new SqlConnection("DataSource = THINKPADE14;" +
-                "Initial Catalog=. ;" + "Intergrated Security=True");
+            cnn = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
         }
 
         private void frmtimkiemsach_Load(object sender, EventArgs e)

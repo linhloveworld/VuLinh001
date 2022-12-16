@@ -29,27 +29,45 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giaodien));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xửLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.mnudn = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudk = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudx = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudanhmuc = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudmqlsv = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudmqlnv = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudmqlsach = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudlsach = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudlsachmuon = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudmqlphieu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudlphieumuon = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudlphieunhactra = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnutimkiem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuxuly = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnubaocao = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnutrogiup = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.ckhienthimk = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblthongbao = new System.Windows.Forms.Label();
+            this.txtmatkhau = new System.Windows.Forms.TextBox();
+            this.txttaikhoan = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -57,11 +75,11 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hệThốngToolStripMenuItem,
-            this.danhMụcToolStripMenuItem,
-            this.tìmKiếmToolStripMenuItem,
-            this.xửLýToolStripMenuItem,
-            this.báoCáoToolStripMenuItem,
-            this.trợGiúpToolStripMenuItem});
+            this.mnudanhmuc,
+            this.mnutimkiem,
+            this.mnuxuly,
+            this.mnubaocao,
+            this.mnutrogiup});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1037, 28);
@@ -70,51 +88,144 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             // 
             // hệThốngToolStripMenuItem
             // 
+            this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnudn,
+            this.mnudk,
+            this.mnudx});
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             // 
-            // danhMụcToolStripMenuItem
+            // mnudn
             // 
-            this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
-            this.danhMụcToolStripMenuItem.Text = "Danh mục";
+            this.mnudn.Name = "mnudn";
+            this.mnudn.Size = new System.Drawing.Size(165, 26);
+            this.mnudn.Text = "Đăng nhập";
             // 
-            // tìmKiếmToolStripMenuItem
+            // mnudk
             // 
-            this.tìmKiếmToolStripMenuItem.Name = "tìmKiếmToolStripMenuItem";
-            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
-            this.tìmKiếmToolStripMenuItem.Text = "Tìm kiếm";
+            this.mnudk.Name = "mnudk";
+            this.mnudk.Size = new System.Drawing.Size(165, 26);
+            this.mnudk.Text = "Đăng ký";
+            this.mnudk.Click += new System.EventHandler(this.mnudk_Click);
             // 
-            // xửLýToolStripMenuItem
+            // mnudx
             // 
-            this.xửLýToolStripMenuItem.Name = "xửLýToolStripMenuItem";
-            this.xửLýToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
-            this.xửLýToolStripMenuItem.Text = "Xử lý";
+            this.mnudx.Name = "mnudx";
+            this.mnudx.Size = new System.Drawing.Size(165, 26);
+            this.mnudx.Text = "Đăng xuất";
+            this.mnudx.Click += new System.EventHandler(this.mnudx_Click);
             // 
-            // báoCáoToolStripMenuItem
+            // mnudanhmuc
             // 
-            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
-            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
+            this.mnudanhmuc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnudmqlsv,
+            this.mnudmqlnv,
+            this.mnudmqlsach,
+            this.mnudmqlphieu});
+            this.mnudanhmuc.Name = "mnudanhmuc";
+            this.mnudanhmuc.Size = new System.Drawing.Size(90, 24);
+            this.mnudanhmuc.Text = "Danh mục";
             // 
-            // trợGiúpToolStripMenuItem
+            // mnudmqlsv
             // 
-            this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
-            this.trợGiúpToolStripMenuItem.Text = "Trợ giúp";
+            this.mnudmqlsv.Name = "mnudmqlsv";
+            this.mnudmqlsv.Size = new System.Drawing.Size(275, 26);
+            this.mnudmqlsv.Text = "Danh muc quan li sinh vien";
+            this.mnudmqlsv.Click += new System.EventHandler(this.mnudmqlsv_Click);
             // 
-            // bunifuCustomLabel1
+            // mnudmqlnv
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Yellow;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(334, 56);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(386, 55);
-            this.bunifuCustomLabel1.TabIndex = 1;
-            this.bunifuCustomLabel1.Text = "Quản lý thư viện";
+            this.mnudmqlnv.Name = "mnudmqlnv";
+            this.mnudmqlnv.Size = new System.Drawing.Size(275, 26);
+            this.mnudmqlnv.Text = "Danh muc quan li nhan vien";
+            this.mnudmqlnv.Click += new System.EventHandler(this.mnudmqlnv_Click);
+            // 
+            // mnudmqlsach
+            // 
+            this.mnudmqlsach.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnudlsach,
+            this.mnudlsachmuon});
+            this.mnudmqlsach.Name = "mnudmqlsach";
+            this.mnudmqlsach.Size = new System.Drawing.Size(275, 26);
+            this.mnudmqlsach.Text = "Danh muc quan ly Sach";
+            // 
+            // mnudlsach
+            // 
+            this.mnudlsach.Name = "mnudlsach";
+            this.mnudlsach.Size = new System.Drawing.Size(214, 26);
+            this.mnudlsach.Text = "Du lieu sach";
+            this.mnudlsach.Click += new System.EventHandler(this.mnudlsach_Click);
+            // 
+            // mnudlsachmuon
+            // 
+            this.mnudlsachmuon.Name = "mnudlsachmuon";
+            this.mnudlsachmuon.Size = new System.Drawing.Size(214, 26);
+            this.mnudlsachmuon.Text = "Du lieu sach muon";
+            this.mnudlsachmuon.Click += new System.EventHandler(this.mnudlsachmuon_Click);
+            // 
+            // mnudmqlphieu
+            // 
+            this.mnudmqlphieu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnudlphieumuon,
+            this.mnudlphieunhactra});
+            this.mnudmqlphieu.Name = "mnudmqlphieu";
+            this.mnudmqlphieu.Size = new System.Drawing.Size(275, 26);
+            this.mnudmqlphieu.Text = "Danh muc quan ly Phieu";
+            // 
+            // mnudlphieumuon
+            // 
+            this.mnudlphieumuon.Name = "mnudlphieumuon";
+            this.mnudlphieumuon.Size = new System.Drawing.Size(236, 26);
+            this.mnudlphieumuon.Text = "Du lieu Phieu muon";
+            this.mnudlphieumuon.Click += new System.EventHandler(this.mnudlphieumuon_Click);
+            // 
+            // mnudlphieunhactra
+            // 
+            this.mnudlphieunhactra.Name = "mnudlphieunhactra";
+            this.mnudlphieunhactra.Size = new System.Drawing.Size(236, 26);
+            this.mnudlphieunhactra.Text = "Du lieu Phieu nhac tra";
+            this.mnudlphieunhactra.Click += new System.EventHandler(this.mnudlphieunhactra_Click);
+            // 
+            // mnutimkiem
+            // 
+            this.mnutimkiem.Name = "mnutimkiem";
+            this.mnutimkiem.Size = new System.Drawing.Size(148, 24);
+            this.mnutimkiem.Text = "Tìm kiếm thong tin";
+            this.mnutimkiem.Click += new System.EventHandler(this.mnutimkiem_Click);
+            // 
+            // mnuxuly
+            // 
+            this.mnuxuly.Name = "mnuxuly";
+            this.mnuxuly.Size = new System.Drawing.Size(56, 24);
+            this.mnuxuly.Text = "Xử lý";
+            this.mnuxuly.Click += new System.EventHandler(this.mnuxuly_Click);
+            // 
+            // mnubaocao
+            // 
+            this.mnubaocao.Name = "mnubaocao";
+            this.mnubaocao.Size = new System.Drawing.Size(77, 24);
+            this.mnubaocao.Text = "Báo cáo";
+            this.mnubaocao.Click += new System.EventHandler(this.mnubaocao_Click);
+            // 
+            // mnutrogiup
+            // 
+            this.mnutrogiup.Name = "mnutrogiup";
+            this.mnutrogiup.Size = new System.Drawing.Size(78, 24);
+            this.mnutrogiup.Text = "Trợ giup";
+            this.mnutrogiup.Click += new System.EventHandler(this.mnutrogiup_Click);
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl1.Location = new System.Drawing.Point(334, 56);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(386, 55);
+            this.lbl1.TabIndex = 1;
+            this.lbl1.Text = "Quản lý thư viện";
             // 
             // bunifuCustomLabel2
             // 
@@ -187,46 +298,13 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuCustomLabel7.TabIndex = 7;
             this.bunifuCustomLabel7.Text = "Mật khẩu";
             // 
-            // bunifuMetroTextbox1
-            // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderThickness = 2;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Calibri Light", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(479, 133);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(296, 40);
-            this.bunifuMetroTextbox1.TabIndex = 8;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMetroTextbox2
-            // 
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderThickness = 2;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Calibri Light", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(479, 193);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(296, 40);
-            this.bunifuMetroTextbox2.TabIndex = 9;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 5;
+            this.bunifuFlatButton1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.bunifuFlatButton1.ButtonText = "Đăng nhập";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
@@ -244,7 +322,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(479, 255);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(328, 267);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
@@ -257,19 +335,21 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // bunifuCheckbox1
+            // ckhienthimk
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = true;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(808, 213);
-            this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox1.TabIndex = 11;
+            this.ckhienthimk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ckhienthimk.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ckhienthimk.Checked = true;
+            this.ckhienthimk.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ckhienthimk.ForeColor = System.Drawing.Color.White;
+            this.ckhienthimk.Location = new System.Drawing.Point(808, 213);
+            this.ckhienthimk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckhienthimk.Name = "ckhienthimk";
+            this.ckhienthimk.Size = new System.Drawing.Size(20, 20);
+            this.ckhienthimk.TabIndex = 11;
+            this.ckhienthimk.OnChange += new System.EventHandler(this.ckhienthimk_OnChange);
             // 
             // bunifuCustomLabel8
             // 
@@ -280,6 +360,49 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuCustomLabel8.TabIndex = 12;
             this.bunifuCustomLabel8.Text = "hiện password";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(49, 77);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(49, 156);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblthongbao
+            // 
+            this.lblthongbao.AutoSize = true;
+            this.lblthongbao.Location = new System.Drawing.Point(211, 267);
+            this.lblthongbao.Name = "lblthongbao";
+            this.lblthongbao.Size = new System.Drawing.Size(0, 17);
+            this.lblthongbao.TabIndex = 15;
+            // 
+            // txtmatkhau
+            // 
+            this.txtmatkhau.Location = new System.Drawing.Point(479, 211);
+            this.txtmatkhau.Name = "txtmatkhau";
+            this.txtmatkhau.PasswordChar = '*';
+            this.txtmatkhau.Size = new System.Drawing.Size(296, 22);
+            this.txtmatkhau.TabIndex = 16;
+            // 
+            // txttaikhoan
+            // 
+            this.txttaikhoan.Location = new System.Drawing.Point(480, 145);
+            this.txttaikhoan.Name = "txttaikhoan";
+            this.txttaikhoan.Size = new System.Drawing.Size(296, 22);
+            this.txttaikhoan.TabIndex = 17;
+            // 
             // Giaodien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -287,25 +410,31 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.BackgroundImage = global::BTL_QLThuvien_Csharp_Nhom10.Properties.Resources._9320262_4144946;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1037, 488);
+            this.Controls.Add(this.txttaikhoan);
+            this.Controls.Add(this.txtmatkhau);
+            this.Controls.Add(this.lblthongbao);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuCustomLabel8);
-            this.Controls.Add(this.bunifuCheckbox1);
+            this.Controls.Add(this.ckhienthimk);
             this.Controls.Add(this.bunifuFlatButton1);
-            this.Controls.Add(this.bunifuMetroTextbox2);
-            this.Controls.Add(this.bunifuMetroTextbox1);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.bunifuCustomLabel1);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Giaodien";
             this.Text = "Giao diện";
+            this.Load += new System.EventHandler(this.Giaodien_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,24 +443,39 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem danhMụcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tìmKiếmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xửLýToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem báoCáoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbl1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
+        private Bunifu.Framework.UI.BunifuCheckbox ckhienthimk;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnudn;
+        private System.Windows.Forms.ToolStripMenuItem mnudk;
+        private System.Windows.Forms.ToolStripMenuItem mnudx;
+        private System.Windows.Forms.ToolStripMenuItem mnudanhmuc;
+        private System.Windows.Forms.ToolStripMenuItem mnudmqlsv;
+        private System.Windows.Forms.ToolStripMenuItem mnudmqlnv;
+        private System.Windows.Forms.ToolStripMenuItem mnudmqlsach;
+        private System.Windows.Forms.ToolStripMenuItem mnudlsach;
+        private System.Windows.Forms.ToolStripMenuItem mnudlsachmuon;
+        private System.Windows.Forms.ToolStripMenuItem mnudmqlphieu;
+        private System.Windows.Forms.ToolStripMenuItem mnudlphieumuon;
+        private System.Windows.Forms.ToolStripMenuItem mnudlphieunhactra;
+        private System.Windows.Forms.ToolStripMenuItem mnutimkiem;
+        private System.Windows.Forms.ToolStripMenuItem mnuxuly;
+        private System.Windows.Forms.ToolStripMenuItem mnubaocao;
+        private System.Windows.Forms.ToolStripMenuItem mnutrogiup;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblthongbao;
+        private System.Windows.Forms.TextBox txtmatkhau;
+        private System.Windows.Forms.TextBox txttaikhoan;
     }
 }
 

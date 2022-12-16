@@ -30,6 +30,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btninsach = new System.Windows.Forms.Button();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtsoluong = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -61,8 +62,8 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btntien = new System.Windows.Forms.Button();
             this.btnlui = new System.Windows.Forms.Button();
             this.btndau = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnthoat = new System.Windows.Forms.Button();
             this.lblthongbao = new System.Windows.Forms.Label();
             this.lblhienthinv = new System.Windows.Forms.Label();
             this.btnsuasach = new System.Windows.Forms.Button();
@@ -71,8 +72,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btnxoasach = new System.Windows.Forms.Button();
             this.lbltieude = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnthoat = new System.Windows.Forms.Button();
-            this.btninsach = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pichinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgsach)).BeginInit();
@@ -111,6 +110,15 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thong tin sach";
             // 
+            // btninsach
+            // 
+            this.btninsach.Location = new System.Drawing.Point(449, 254);
+            this.btninsach.Name = "btninsach";
+            this.btninsach.Size = new System.Drawing.Size(75, 23);
+            this.btninsach.TabIndex = 25;
+            this.btninsach.Text = "In";
+            this.btninsach.UseVisualStyleBackColor = true;
+            // 
             // bunifuCustomLabel10
             // 
             this.bunifuCustomLabel10.AutoSize = true;
@@ -126,7 +134,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtsoluong.Name = "txtsoluong";
             this.txtsoluong.Size = new System.Drawing.Size(100, 22);
             this.txtsoluong.TabIndex = 23;
-            this.txtsoluong.Text = "so luong";
             this.txtsoluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsoluong_KeyPress);
             // 
             // bunifuCustomLabel9
@@ -144,7 +151,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtnamxb.Name = "txtnamxb";
             this.txtnamxb.Size = new System.Drawing.Size(100, 22);
             this.txtnamxb.TabIndex = 24;
-            this.txtnamxb.Text = "nam xuat ban";
             this.txtnamxb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnamxb_KeyPress);
             // 
             // txtmasach
@@ -153,7 +159,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtmasach.Name = "txtmasach";
             this.txtmasach.Size = new System.Drawing.Size(100, 22);
             this.txtmasach.TabIndex = 20;
-            this.txtmasach.Text = "ma sach";
             // 
             // txttinhtrang
             // 
@@ -161,7 +166,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txttinhtrang.Name = "txttinhtrang";
             this.txttinhtrang.Size = new System.Drawing.Size(100, 22);
             this.txttinhtrang.TabIndex = 9;
-            this.txttinhtrang.Text = "tinh trang";
             // 
             // btnhinh
             // 
@@ -206,7 +210,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txttg.Name = "txttg";
             this.txttg.Size = new System.Drawing.Size(100, 22);
             this.txttg.TabIndex = 19;
-            this.txttg.Text = "tg";
             // 
             // bunifuCustomLabel7
             // 
@@ -223,7 +226,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txttensach.Name = "txttensach";
             this.txttensach.Size = new System.Drawing.Size(100, 22);
             this.txttensach.TabIndex = 18;
-            this.txttensach.Text = "ten sach";
             // 
             // bunifuCustomLabel5
             // 
@@ -241,7 +243,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txttimkiemma.Name = "txttimkiemma";
             this.txttimkiemma.Size = new System.Drawing.Size(151, 28);
             this.txttimkiemma.TabIndex = 3;
-            this.txttimkiemma.Text = "Ma can tim";
             // 
             // txttheloaisach
             // 
@@ -249,20 +250,19 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txttheloaisach.Name = "txttheloaisach";
             this.txttheloaisach.Size = new System.Drawing.Size(100, 22);
             this.txttheloaisach.TabIndex = 11;
-            this.txttheloaisach.Text = "the loai sach";
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(264, 162);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(43, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(73, 17);
             this.bunifuCustomLabel3.TabIndex = 12;
-            this.bunifuCustomLabel3.Text = "Ma tg";
+            this.bunifuCustomLabel3.Text = "Ma tac gia";
             // 
             // btntensach
             // 
-            this.btntensach.Location = new System.Drawing.Point(449, 218);
+            this.btntensach.Location = new System.Drawing.Point(449, 225);
             this.btntensach.Name = "btntensach";
             this.btntensach.Size = new System.Drawing.Size(75, 23);
             this.btntensach.TabIndex = 2;
@@ -294,7 +294,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtnhaxb.Name = "txtnhaxb";
             this.txtnhaxb.Size = new System.Drawing.Size(100, 22);
             this.txtnhaxb.TabIndex = 10;
-            this.txtnhaxb.Text = "nha xuat ban";
             // 
             // lbltong
             // 
@@ -340,12 +339,11 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox2.Controls.Add(this.btntien);
             this.groupBox2.Controls.Add(this.btnlui);
             this.groupBox2.Controls.Add(this.btndau);
-            this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.dtgsach);
             this.groupBox2.Controls.Add(this.bunifuCustomLabel1);
             this.groupBox2.Controls.Add(this.lbltong);
             this.groupBox2.Controls.Add(this.bunifuCustomLabel2);
-            this.groupBox2.Location = new System.Drawing.Point(593, 51);
+            this.groupBox2.Location = new System.Drawing.Point(720, 51);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(408, 428);
             this.groupBox2.TabIndex = 9;
@@ -399,15 +397,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btndau.UseVisualStyleBackColor = true;
             this.btndau.Click += new System.EventHandler(this.btndau_Click);
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(3, 18);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnthoat);
@@ -423,6 +412,16 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xu ly";
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Location = new System.Drawing.Point(451, 98);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(75, 23);
+            this.btnthoat.TabIndex = 18;
+            this.btnthoat.Text = "Thoat";
+            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // lblthongbao
             // 
@@ -498,30 +497,11 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // btnthoat
-            // 
-            this.btnthoat.Location = new System.Drawing.Point(451, 98);
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(75, 23);
-            this.btnthoat.TabIndex = 18;
-            this.btnthoat.Text = "Thoat";
-            this.btnthoat.UseVisualStyleBackColor = true;
-            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
-            // 
-            // btninsach
-            // 
-            this.btninsach.Location = new System.Drawing.Point(449, 254);
-            this.btninsach.Name = "btninsach";
-            this.btninsach.Size = new System.Drawing.Size(75, 23);
-            this.btninsach.TabIndex = 25;
-            this.btninsach.Text = "In";
-            this.btninsach.UseVisualStyleBackColor = true;
-            // 
             // frmSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 524);
+            this.ClientSize = new System.Drawing.Size(1179, 575);
             this.Controls.Add(this.lbltieude);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -576,7 +556,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private System.Windows.Forms.Button btntien;
         private System.Windows.Forms.Button btnlui;
         private System.Windows.Forms.Button btndau;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label lblthongbao;
         private System.Windows.Forms.Label lblhienthinv;

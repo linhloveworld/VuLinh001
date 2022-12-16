@@ -15,7 +15,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmPhieumuonsach()
         {
             InitializeComponent();
-            con = new SqlConnection("Data Source=.;Initial Catalog=QLThuVien;Integrated Security=True");
+            con = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
         }
 
         private void frmPhieumuonsach_Load(object sender, EventArgs e)

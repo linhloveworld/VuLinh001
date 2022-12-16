@@ -14,8 +14,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmmuontrasach()
         {
             InitializeComponent();
-            cnn = new SqlConnection("DataSource = THINKPADE14;" +
-                "Initial Catalog=. ;" + "Intergrated Security=True");
+            cnn = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
             vt_thetv = new DataTable();
             vt_thetv = loadthethuvien();
         }
@@ -936,6 +935,216 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             }
             else btncuoi2.Enabled = false;
         }
+        private DataTable loadphieunhactra(string mathe)
+        {
+            DataTable phieunt = new DataTable();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "sp_Docphieunhactrasinhvien";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            mathe = txtmathe2.Text; 
+            cmd.Parameters.AddWithValue("@mathe", mathe);
+            try
+            {
+                cnn.Open();
+                phieunt.Load(cmd.ExecuteReader());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Loi khong doc duoc phieu muon", e.Message);
+            }
+            finally
+            {
+                if (cnn != null)
+                    cnn.Close();
+            }
+            return phieunt;
+        }
+        private void hienbangpnt(string mathe)
+        {
+            huy_lienketdl();
+            dtgds2.DataSource = loadphieunhactra(mathe);
+            data_bindings2();
+        }
+        private void suaphieunhactra()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "sp_SUAPHIEUNHACTRA";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            string manv, mapnt, ghichu;
+            DateTime ngaylapphieu;
+            double dongiaphat;
+            manv= cbomanv.SelectedValue.ToString();
+            mapnt = txtmapnt.Text;
+            ghichu = txtmathe.Text;
+            if (txtdgp.Text == "")
+            {
+                dongiaphat = 0;
+            }
+            else
+            {
+                dongiaphat = double.Parse(txtdgp.Text);
+            }
+            ngaylapphieu = DateTime.Parse(dtpngaylap.Value.ToString());
+            cmd.Parameters.Add("@MaNhanVien", manv);
+            cmd.Parameters.Add("@MaPhieuNhacTra", mapnt);
+            cmd.Parameters.Add("@GhiChu", ghichu);
+            cmd.Parameters.Add("@NgayLapPhieu", ngaylapphieu);
+            cmd.Parameters.Add("@DonGiaPhat", dongiaphat);
+            try
+            {
+                cmd.Parameters.Add("@kq", SqlDbType.Int).Direction =
+                    ParameterDirection.ReturnValue;
+                cnn.Open();
+                cmd.ExecuteNonQuery();
+                int kq = (int)cmd.Parameters["@kq"].Value;
+                if (kq == 1)
+                {
+                    lblthongbaopnt.ForeColor = Color.Red;
+                    lblthongbaopnt.Text = "Da ton tai phieu";
+                    return;
+                }
+                else if (kq == 2)
+                {
+                    lblthongbaopnt.ForeColor = Color.Red;
+                    lblthongbaopnt.Text = "Khong ton tai nhan vien";
+                    return;
+                }
+                else if (kq == 3)
+                {
+                    lblthongbaopnt.ForeColor = Color.Red;
+                    lblthongbaopnt.Text = "Khong ton tai sinh vien";
+                    return;
+                }
+                else if (kq == 4)
+                {
+                    lblthongbaopnt.ForeColor = Color.Red;
+                    lblthongbaopnt.Text = "Khong ton tai sach";
+                    return;
+                }
+                else
+                {
+                    lblthongbaopnt.ForeColor = Color.Green;
+                    lblthongbaopnt.Text = "Sua thanh cong";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong thuc hien duoc vi: " + ex.Message);
+            }
+            finally
+            {
+                if (cnn != null)
+                    cnn.Close();
+            }
+        }
+        private void xoaphieunhactra()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "sp_XOAPHIEUNHACTRA";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            string manv, mapnt, ghichu;
+            DateTime ngaylapphieu;
+            double dongiaphat;
+            manv = cbomanv.SelectedValue.ToString();
+            mapnt = txtmapnt.Text;
+            ghichu = txtmathe.Text;
+            if (txtdgp.Text == "")
+            {
+                dongiaphat = 0;
+            }
+            else
+            {
+                dongiaphat = double.Parse(txtdgp.Text);
+            }
+            ngaylapphieu = DateTime.Parse(dtpngaylap.Value.ToString());
+            cmd.Parameters.Add("@MaNhanVien", manv);
+            cmd.Parameters.Add("@MaPhieuNhacTra", mapnt);
+            cmd.Parameters.Add("@GhiChu", ghichu);
+            cmd.Parameters.Add("@NgayLapPhieu", ngaylapphieu);
+            cmd.Parameters.Add("@DonGiaPhat", dongiaphat);
+            DialogResult kq;
+            kq = MessageBox.Show("Bạn Thật Sự Muốn Xóa", "Chú Ý", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (kq == DialogResult.Yes)
+            {
+                cnn.Open();
+                cmd.ExecuteNonQuery();
+                cnn.Close();
+            }
+            lblthongbaopnt.ForeColor = Color.Green;
+            lblthongbaopnt.Text = "Xóa Thành Công";
+        }
 
+        /*private void btnin1_Click(object sender, EventArgs e)
+        {
+            insach in = new insach();
+            in.ShowDialog();
+        }
+
+        private void btnin2_Click(object sender, EventArgs e)
+        {
+            insach in = new insach();
+            in.ShowDialog();
+        }*/
+       
+        private void btnsuapnt_Click(object sender, EventArgs e)
+        {
+            huy_lienketdl2();
+            suaphieunhactra();
+            hienbangpnt(txtmathe2.Text);
+            loadphieunhactra(txtmathe2.Text);
+            data_bindings2();
+        }
+
+        private void btnxoapnt_Click(object sender, EventArgs e)
+        {
+            huy_lienketdl2();
+            xoaphieunhactra();
+            hienbangpnt(txtmathe2.Text);
+            loadphieunhactra(txtmathe2.Text);
+            data_bindings2();
+        }
+
+        private void txtten1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar > 45 && e.KeyChar < 57)
+            {
+                e.Handled = true;
+                lblthongbao_tp1.ForeColor = Color.Red;
+                lblthongbao_tp1.Text = "Không được nhập số";
+            }
+        }
+
+        private void txtten2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar > 45 && e.KeyChar < 57)
+            {
+                e.Handled = true;
+                lblthongbao_tp2.ForeColor = Color.Red;
+                lblthongbao_tp2.Text = "Không được nhập số";
+            }
+        }
+
+        private void txtsdt1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 45 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 45 && e.KeyChar != 46)
+            {
+                e.Handled = true;
+                lblthongbao_tp1.ForeColor = Color.Red;
+                lblthongbao_tp1.Text = "Không được nhập chữ";
+            }
+        }
+
+        private void txtsdt2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 45 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 45 && e.KeyChar != 46)
+            {
+                e.Handled = true;
+                lblthongbao_tp2.ForeColor = Color.Red;
+                lblthongbao_tp2.Text = "Không được nhập chữ";
+            }
+        }
     }
 }

@@ -18,8 +18,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmNhanVien()
         {
             InitializeComponent();
-            con = new SqlConnection("DataSource = THINKPADE14;" +
-                "Initial Catalog=. ;" + "Intergrated Security=True");
+            con = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
         }
 
         private void txtTennv_OnValueChanged(object sender, EventArgs e)
@@ -181,6 +180,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             cmd.Parameters.AddWithValue("@GioiTinh", gioitinhnv);
             cmd.Parameters.AddWithValue("@ChucvuNV", chucvunv);
             cmd.Parameters.AddWithValue("@DiaChiNV", diachinv);
+            cmd.Parameters.AddWithValue("@SoDienThoaiNV", dienthoainv);
             try
             {
                 cmd.Parameters.Add("@kq",

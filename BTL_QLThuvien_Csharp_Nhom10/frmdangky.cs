@@ -17,7 +17,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmdangky()
         {
             InitializeComponent();
-            cnn = new SqlConnection("Data Source=.;Initial Catalog=QLThuVien;Integrated Security=True");
+            cnn = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
         }
         private void dangky()
         {

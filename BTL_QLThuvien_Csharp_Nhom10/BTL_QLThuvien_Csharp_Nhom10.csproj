@@ -51,6 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BTL_NET1_QLThuVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTL_NET1_QLThuVienDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmdangky.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +110,12 @@
     <Compile Include="frmthethuvien.Designer.cs">
       <DependentUpon>frmthethuvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmthongtinsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthongtinsach.Designer.cs">
+      <DependentUpon>frmthongtinsach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmtimkiemsach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +127,12 @@
     </Compile>
     <Compile Include="Giaodien.Designer.cs">
       <DependentUpon>Giaodien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insach.Designer.cs">
+      <DependentUpon>insach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,11 +163,17 @@
     <EmbeddedResource Include="frmthethuvien.resx">
       <DependentUpon>frmthethuvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmthongtinsach.resx">
+      <DependentUpon>frmthongtinsach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmtimkiemsach.resx">
       <DependentUpon>frmtimkiemsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Giaodien.resx">
       <DependentUpon>Giaodien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insach.resx">
+      <DependentUpon>insach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,6 +185,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BTL_NET1_QLThuVienDataSet.xsc">
+      <DependentUpon>BTL_NET1_QLThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTL_NET1_QLThuVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTL_NET1_QLThuVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTL_NET1_QLThuVienDataSet.xss">
+      <DependentUpon>BTL_NET1_QLThuVienDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -336,6 +370,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\blue_to_green_by_jesssaysno_df3mfpl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AnhHeThong\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

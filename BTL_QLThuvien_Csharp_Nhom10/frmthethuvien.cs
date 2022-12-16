@@ -14,8 +14,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmthethuvien()
         {
             InitializeComponent();
-            sqlconn = new SqlConnection("DataSource = THINKPADE14;" +
-                "Initial Catalog=. ;" + "Intergrated Security=True");
+            sqlconn = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
         }
         private string taomathe()
         {

@@ -61,6 +61,8 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.cbogioitinh1 = new System.Windows.Forms.ComboBox();
             this.txtten1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtmathe = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -79,10 +81,8 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnluupnt = new System.Windows.Forms.Button();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnsuapnt = new System.Windows.Forms.Button();
-            this.btnthempnt = new System.Windows.Forms.Button();
             this.txtmapnt = new System.Windows.Forms.TextBox();
             this.btnxoapnt = new System.Windows.Forms.Button();
             this.txtdgp = new System.Windows.Forms.TextBox();
@@ -119,8 +119,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btnlui2 = new System.Windows.Forms.Button();
             this.btndau2 = new System.Windows.Forms.Button();
             this.dtgds2 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtmathe = new System.Windows.Forms.TextBox();
+            this.lblthongbaopnt = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -266,6 +265,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btnin1.TabIndex = 4;
             this.btnin1.Text = "In";
             this.btnin1.UseVisualStyleBackColor = true;
+            //this.btnin1.Click += new System.EventHandler(this.btnin1_Click);
             // 
             // btnxoa1
             // 
@@ -412,6 +412,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtsdt1.Name = "txtsdt1";
             this.txtsdt1.Size = new System.Drawing.Size(200, 22);
             this.txtsdt1.TabIndex = 19;
+            this.txtsdt1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsdt1_KeyPress);
             // 
             // txtdiachi1
             // 
@@ -438,6 +439,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtten1.Name = "txtten1";
             this.txtten1.Size = new System.Drawing.Size(200, 22);
             this.txtten1.TabIndex = 16;
+            this.txtten1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtten1_KeyPress);
             // 
             // groupBox3
             // 
@@ -458,6 +460,22 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Cap nhat thong tin muon sach";
+            // 
+            // txtmathe
+            // 
+            this.txtmathe.Location = new System.Drawing.Point(129, 110);
+            this.txtmathe.Name = "txtmathe";
+            this.txtmathe.Size = new System.Drawing.Size(224, 22);
+            this.txtmathe.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Ma the thu vien";
             // 
             // label3
             // 
@@ -589,14 +607,13 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.lblthongbaopnt);
             this.groupBox6.Controls.Add(this.bunifuCustomLabel13);
             this.groupBox6.Controls.Add(this.bunifuCustomLabel12);
             this.groupBox6.Controls.Add(this.bunifuCustomLabel11);
             this.groupBox6.Controls.Add(this.bunifuCustomLabel10);
-            this.groupBox6.Controls.Add(this.btnluupnt);
             this.groupBox6.Controls.Add(this.bunifuCustomLabel9);
             this.groupBox6.Controls.Add(this.btnsuapnt);
-            this.groupBox6.Controls.Add(this.btnthempnt);
             this.groupBox6.Controls.Add(this.txtmapnt);
             this.groupBox6.Controls.Add(this.btnxoapnt);
             this.groupBox6.Controls.Add(this.txtdgp);
@@ -646,15 +663,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.bunifuCustomLabel10.TabIndex = 9;
             this.bunifuCustomLabel10.Text = "Ngay lap";
             // 
-            // btnluupnt
-            // 
-            this.btnluupnt.Location = new System.Drawing.Point(151, 267);
-            this.btnluupnt.Name = "btnluupnt";
-            this.btnluupnt.Size = new System.Drawing.Size(84, 33);
-            this.btnluupnt.TabIndex = 2;
-            this.btnluupnt.Text = "Luu pnt";
-            this.btnluupnt.UseVisualStyleBackColor = true;
-            // 
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
@@ -666,21 +674,13 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             // 
             // btnsuapnt
             // 
-            this.btnsuapnt.Location = new System.Drawing.Point(12, 330);
+            this.btnsuapnt.Location = new System.Drawing.Point(10, 279);
             this.btnsuapnt.Name = "btnsuapnt";
             this.btnsuapnt.Size = new System.Drawing.Size(84, 31);
             this.btnsuapnt.TabIndex = 1;
             this.btnsuapnt.Text = "Sua pnt";
             this.btnsuapnt.UseVisualStyleBackColor = true;
-            // 
-            // btnthempnt
-            // 
-            this.btnthempnt.Location = new System.Drawing.Point(12, 266);
-            this.btnthempnt.Name = "btnthempnt";
-            this.btnthempnt.Size = new System.Drawing.Size(84, 31);
-            this.btnthempnt.TabIndex = 0;
-            this.btnthempnt.Text = "Them pnt";
-            this.btnthempnt.UseVisualStyleBackColor = true;
+            this.btnsuapnt.Click += new System.EventHandler(this.btnsuapnt_Click);
             // 
             // txtmapnt
             // 
@@ -691,12 +691,13 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             // 
             // btnxoapnt
             // 
-            this.btnxoapnt.Location = new System.Drawing.Point(151, 330);
+            this.btnxoapnt.Location = new System.Drawing.Point(151, 278);
             this.btnxoapnt.Name = "btnxoapnt";
             this.btnxoapnt.Size = new System.Drawing.Size(84, 32);
             this.btnxoapnt.TabIndex = 2;
             this.btnxoapnt.Text = "Xoa pnt";
             this.btnxoapnt.UseVisualStyleBackColor = true;
+            this.btnxoapnt.Click += new System.EventHandler(this.btnxoapnt_Click);
             // 
             // txtdgp
             // 
@@ -783,6 +784,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btnin2.TabIndex = 4;
             this.btnin2.Text = "In";
             this.btnin2.UseVisualStyleBackColor = true;
+            //this.btnin2.Click += new System.EventHandler(this.btnin2_Click);
             // 
             // bunifuCustomLabel8
             // 
@@ -922,6 +924,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtsdt2.Name = "txtsdt2";
             this.txtsdt2.Size = new System.Drawing.Size(200, 22);
             this.txtsdt2.TabIndex = 3;
+            this.txtsdt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsdt2_KeyPress);
             // 
             // txtdiachi2
             // 
@@ -948,6 +951,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtten2.Name = "txtten2";
             this.txtten2.Size = new System.Drawing.Size(200, 22);
             this.txtten2.TabIndex = 0;
+            this.txtten2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtten2_KeyPress);
             // 
             // groupBox4
             // 
@@ -1021,21 +1025,14 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.dtgds2.Size = new System.Drawing.Size(373, 221);
             this.dtgds2.TabIndex = 2;
             // 
-            // label4
+            // lblthongbaopnt
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Ma the thu vien";
-            // 
-            // txtmathe
-            // 
-            this.txtmathe.Location = new System.Drawing.Point(129, 110);
-            this.txtmathe.Name = "txtmathe";
-            this.txtmathe.Size = new System.Drawing.Size(224, 22);
-            this.txtmathe.TabIndex = 12;
+            this.lblthongbaopnt.AutoSize = true;
+            this.lblthongbaopnt.Location = new System.Drawing.Point(74, 344);
+            this.lblthongbaopnt.Name = "lblthongbaopnt";
+            this.lblthongbaopnt.Size = new System.Drawing.Size(161, 17);
+            this.lblthongbaopnt.TabIndex = 13;
+            this.lblthongbaopnt.Text = "(thongbaophieunhactra)";
             // 
             // frmmuontrasach
             // 
@@ -1127,10 +1124,8 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private System.Windows.Forms.Button btnluupnt;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private System.Windows.Forms.Button btnsuapnt;
-        private System.Windows.Forms.Button btnthempnt;
         private System.Windows.Forms.TextBox txtmapnt;
         private System.Windows.Forms.Button btnxoapnt;
         private System.Windows.Forms.TextBox txtdgp;
@@ -1161,5 +1156,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private System.Windows.Forms.TextBox txtten1;
         private System.Windows.Forms.TextBox txtmathe;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblthongbaopnt;
     }
 }

@@ -18,8 +18,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         public frmPhieuNhacTra()
         {
             InitializeComponent();
-            conn = new SqlConnection("DataSource = THINKPADE14;" +
-                "Initial Catalog=. ;"+"Intergrated Security=True");
+            conn = new SqlConnection("Data Source=THINKPADE14;Initial Catalog=BTL_NET1_QLThuVienDataSet");
         }
         
         private void txtghichu_TextChanged(object sender, EventArgs e)
@@ -329,7 +328,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             loadphieunhactra();
             lienket_dulieu();
         }
-        private void xoaphieumuon()
+        private void xoaphieunhactra()
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "sp_XOAPHIEUNHACTRA";
@@ -353,7 +352,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private void btnxoapnt_Click(object sender, EventArgs e)
         {
             huy_lienketdulieu();
-            xoaphieumuon();
+            xoaphieunhactra();
             loadphieunhactra();
             lienket_dulieu();
         }

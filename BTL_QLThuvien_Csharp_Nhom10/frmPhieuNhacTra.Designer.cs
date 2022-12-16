@@ -30,38 +30,38 @@ namespace BTL_QLThuvien_Csharp_Nhom10
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.dtpngaylap = new System.Windows.Forms.DateTimePicker();
+            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cbomanv = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtmapnt = new System.Windows.Forms.TextBox();
             this.txtghichu = new System.Windows.Forms.TextBox();
+            this.txtdgp = new System.Windows.Forms.TextBox();
             this.cbomasach = new System.Windows.Forms.ComboBox();
             this.cbomathe = new System.Windows.Forms.ComboBox();
-            this.dtpngaylap = new System.Windows.Forms.DateTimePicker();
-            this.txtdgp = new System.Windows.Forms.TextBox();
-            this.txtmapnt = new System.Windows.Forms.TextBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.cbomanv = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgttpnt = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblhienthinv = new System.Windows.Forms.Label();
-            this.lblthongbaopnt = new System.Windows.Forms.Label();
-            this.btnluupnt = new System.Windows.Forms.Button();
-            this.btnsuapnt = new System.Windows.Forms.Button();
-            this.btnthempnt = new System.Windows.Forms.Button();
-            this.btntimkiem = new System.Windows.Forms.Button();
             this.btnxoapnt = new System.Windows.Forms.Button();
+            this.btntimkiem = new System.Windows.Forms.Button();
+            this.btnthempnt = new System.Windows.Forms.Button();
+            this.btnsuapnt = new System.Windows.Forms.Button();
+            this.btnluupnt = new System.Windows.Forms.Button();
+            this.lblthongbaopnt = new System.Windows.Forms.Label();
+            this.lblhienthinv = new System.Windows.Forms.Label();
             this.btnthoatpnt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgttpnt)).BeginInit();
@@ -92,6 +92,93 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thong tin phieu nhac nho";
             // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(6, 48);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(122, 17);
+            this.bunifuCustomLabel7.TabIndex = 14;
+            this.bunifuCustomLabel7.Text = "Ma phieu nhac tra";
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(8, 240);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(103, 17);
+            this.bunifuCustomLabel6.TabIndex = 13;
+            this.bunifuCustomLabel6.Text = "Ngay lap phieu";
+            // 
+            // dtpngaylap
+            // 
+            this.dtpngaylap.Location = new System.Drawing.Point(121, 237);
+            this.dtpngaylap.Name = "dtpngaylap";
+            this.dtpngaylap.Size = new System.Drawing.Size(200, 22);
+            this.dtpngaylap.TabIndex = 4;
+            this.dtpngaylap.ValueChanged += new System.EventHandler(this.dtpngaylap_ValueChanged);
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(264, 99);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(89, 17);
+            this.bunifuCustomLabel5.TabIndex = 12;
+            this.bunifuCustomLabel5.Text = "Don gia phat";
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(8, 186);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(93, 17);
+            this.bunifuCustomLabel4.TabIndex = 11;
+            this.bunifuCustomLabel4.Text = "Ma nhan vien";
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(7, 144);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(51, 17);
+            this.bunifuCustomLabel3.TabIndex = 10;
+            this.bunifuCustomLabel3.Text = "Ma the";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(6, 96);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(61, 17);
+            this.bunifuCustomLabel2.TabIndex = 9;
+            this.bunifuCustomLabel2.Text = "Ma sach";
+            // 
+            // cbomanv
+            // 
+            this.cbomanv.FormattingEnabled = true;
+            this.cbomanv.Location = new System.Drawing.Point(120, 186);
+            this.cbomanv.Name = "cbomanv";
+            this.cbomanv.Size = new System.Drawing.Size(121, 24);
+            this.cbomanv.TabIndex = 8;
+            this.cbomanv.Text = "Ma nhan vien";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(264, 48);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(57, 17);
+            this.bunifuCustomLabel1.TabIndex = 7;
+            this.bunifuCustomLabel1.Text = "Ghi chu";
+            // 
+            // txtmapnt
+            // 
+            this.txtmapnt.Location = new System.Drawing.Point(141, 48);
+            this.txtmapnt.Name = "txtmapnt";
+            this.txtmapnt.Size = new System.Drawing.Size(100, 22);
+            this.txtmapnt.TabIndex = 6;
+            // 
             // txtghichu
             // 
             this.txtghichu.Location = new System.Drawing.Point(361, 43);
@@ -99,6 +186,14 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.txtghichu.Size = new System.Drawing.Size(100, 22);
             this.txtghichu.TabIndex = 1;
             this.txtghichu.TextChanged += new System.EventHandler(this.txtghichu_TextChanged);
+            // 
+            // txtdgp
+            // 
+            this.txtdgp.Location = new System.Drawing.Point(361, 99);
+            this.txtdgp.Name = "txtdgp";
+            this.txtdgp.Size = new System.Drawing.Size(100, 22);
+            this.txtdgp.TabIndex = 5;
+            this.txtdgp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdgp_KeyPress);
             // 
             // cbomasach
             // 
@@ -117,101 +212,6 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.cbomathe.Size = new System.Drawing.Size(121, 24);
             this.cbomathe.TabIndex = 3;
             this.cbomathe.Text = "Ma the";
-            // 
-            // dtpngaylap
-            // 
-            this.dtpngaylap.Location = new System.Drawing.Point(121, 237);
-            this.dtpngaylap.Name = "dtpngaylap";
-            this.dtpngaylap.Size = new System.Drawing.Size(200, 22);
-            this.dtpngaylap.TabIndex = 4;
-            this.dtpngaylap.ValueChanged += new System.EventHandler(this.dtpngaylap_ValueChanged);
-            // 
-            // txtdgp
-            // 
-            this.txtdgp.Location = new System.Drawing.Point(361, 99);
-            this.txtdgp.Name = "txtdgp";
-            this.txtdgp.Size = new System.Drawing.Size(100, 22);
-            this.txtdgp.TabIndex = 5;
-            this.txtdgp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdgp_KeyPress);
-            // 
-            // txtmapnt
-            // 
-            this.txtmapnt.Location = new System.Drawing.Point(141, 48);
-            this.txtmapnt.Name = "txtmapnt";
-            this.txtmapnt.Size = new System.Drawing.Size(100, 22);
-            this.txtmapnt.TabIndex = 6;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(264, 48);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(57, 17);
-            this.bunifuCustomLabel1.TabIndex = 7;
-            this.bunifuCustomLabel1.Text = "Ghi chu";
-            // 
-            // cbomanv
-            // 
-            this.cbomanv.FormattingEnabled = true;
-            this.cbomanv.Location = new System.Drawing.Point(121, 179);
-            this.cbomanv.Name = "cbomanv";
-            this.cbomanv.Size = new System.Drawing.Size(121, 24);
-            this.cbomanv.TabIndex = 8;
-            this.cbomanv.Text = "Ma nhan vien";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(6, 96);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(61, 17);
-            this.bunifuCustomLabel2.TabIndex = 9;
-            this.bunifuCustomLabel2.Text = "Ma sach";
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(7, 144);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(51, 17);
-            this.bunifuCustomLabel3.TabIndex = 10;
-            this.bunifuCustomLabel3.Text = "Ma the";
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(8, 186);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(93, 17);
-            this.bunifuCustomLabel4.TabIndex = 11;
-            this.bunifuCustomLabel4.Text = "Ma nhan vien";
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(264, 99);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(89, 17);
-            this.bunifuCustomLabel5.TabIndex = 12;
-            this.bunifuCustomLabel5.Text = "Don gia phat";
-            // 
-            // bunifuCustomLabel6
-            // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(8, 240);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(103, 17);
-            this.bunifuCustomLabel6.TabIndex = 13;
-            this.bunifuCustomLabel6.Text = "Ngay lap phieu";
-            // 
-            // bunifuCustomLabel7
-            // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(6, 48);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(122, 17);
-            this.bunifuCustomLabel7.TabIndex = 14;
-            this.bunifuCustomLabel7.Text = "Ma phieu nhac tra";
             // 
             // groupBox2
             // 
@@ -249,43 +249,24 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xu ly";
             // 
-            // lblhienthinv
+            // btnxoapnt
             // 
-            this.lblhienthinv.AutoSize = true;
-            this.lblhienthinv.Location = new System.Drawing.Point(22, 31);
-            this.lblhienthinv.Name = "lblhienthinv";
-            this.lblhienthinv.Size = new System.Drawing.Size(120, 17);
-            this.lblhienthinv.TabIndex = 0;
-            this.lblhienthinv.Text = "hien thi nhan vien";
+            this.btnxoapnt.Location = new System.Drawing.Point(187, 164);
+            this.btnxoapnt.Name = "btnxoapnt";
+            this.btnxoapnt.Size = new System.Drawing.Size(75, 23);
+            this.btnxoapnt.TabIndex = 6;
+            this.btnxoapnt.Text = "Xoa";
+            this.btnxoapnt.UseVisualStyleBackColor = true;
+            this.btnxoapnt.Click += new System.EventHandler(this.btnxoapnt_Click);
             // 
-            // lblthongbaopnt
+            // btntimkiem
             // 
-            this.lblthongbaopnt.AutoSize = true;
-            this.lblthongbaopnt.Location = new System.Drawing.Point(22, 66);
-            this.lblthongbaopnt.Name = "lblthongbaopnt";
-            this.lblthongbaopnt.Size = new System.Drawing.Size(217, 17);
-            this.lblthongbaopnt.TabIndex = 1;
-            this.lblthongbaopnt.Text = "hien thi thong bao phieu nhac tra";
-            // 
-            // btnluupnt
-            // 
-            this.btnluupnt.Location = new System.Drawing.Point(187, 116);
-            this.btnluupnt.Name = "btnluupnt";
-            this.btnluupnt.Size = new System.Drawing.Size(75, 23);
-            this.btnluupnt.TabIndex = 2;
-            this.btnluupnt.Text = "Luu";
-            this.btnluupnt.UseVisualStyleBackColor = true;
-            this.btnluupnt.Click += new System.EventHandler(this.btnluupnt_Click);
-            // 
-            // btnsuapnt
-            // 
-            this.btnsuapnt.Location = new System.Drawing.Point(25, 164);
-            this.btnsuapnt.Name = "btnsuapnt";
-            this.btnsuapnt.Size = new System.Drawing.Size(75, 23);
-            this.btnsuapnt.TabIndex = 3;
-            this.btnsuapnt.Text = "Sua";
-            this.btnsuapnt.UseVisualStyleBackColor = true;
-            this.btnsuapnt.Click += new System.EventHandler(this.btnsuapnt_Click);
+            this.btntimkiem.Location = new System.Drawing.Point(187, 25);
+            this.btntimkiem.Name = "btntimkiem";
+            this.btntimkiem.Size = new System.Drawing.Size(75, 23);
+            this.btntimkiem.TabIndex = 5;
+            this.btntimkiem.Text = "Tim kiem";
+            this.btntimkiem.UseVisualStyleBackColor = true;
             // 
             // btnthempnt
             // 
@@ -297,24 +278,43 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.btnthempnt.UseVisualStyleBackColor = true;
             this.btnthempnt.Click += new System.EventHandler(this.btnthempnt_Click);
             // 
-            // btntimkiem
+            // btnsuapnt
             // 
-            this.btntimkiem.Location = new System.Drawing.Point(187, 25);
-            this.btntimkiem.Name = "btntimkiem";
-            this.btntimkiem.Size = new System.Drawing.Size(75, 23);
-            this.btntimkiem.TabIndex = 5;
-            this.btntimkiem.Text = "Tim kiem";
-            this.btntimkiem.UseVisualStyleBackColor = true;
+            this.btnsuapnt.Location = new System.Drawing.Point(25, 164);
+            this.btnsuapnt.Name = "btnsuapnt";
+            this.btnsuapnt.Size = new System.Drawing.Size(75, 23);
+            this.btnsuapnt.TabIndex = 3;
+            this.btnsuapnt.Text = "Sua";
+            this.btnsuapnt.UseVisualStyleBackColor = true;
+            this.btnsuapnt.Click += new System.EventHandler(this.btnsuapnt_Click);
             // 
-            // btnxoapnt
+            // btnluupnt
             // 
-            this.btnxoapnt.Location = new System.Drawing.Point(187, 164);
-            this.btnxoapnt.Name = "btnxoapnt";
-            this.btnxoapnt.Size = new System.Drawing.Size(75, 23);
-            this.btnxoapnt.TabIndex = 6;
-            this.btnxoapnt.Text = "Xoa";
-            this.btnxoapnt.UseVisualStyleBackColor = true;
-            this.btnxoapnt.Click += new System.EventHandler(this.btnxoapnt_Click);
+            this.btnluupnt.Location = new System.Drawing.Point(187, 116);
+            this.btnluupnt.Name = "btnluupnt";
+            this.btnluupnt.Size = new System.Drawing.Size(75, 23);
+            this.btnluupnt.TabIndex = 2;
+            this.btnluupnt.Text = "Luu";
+            this.btnluupnt.UseVisualStyleBackColor = true;
+            this.btnluupnt.Click += new System.EventHandler(this.btnluupnt_Click);
+            // 
+            // lblthongbaopnt
+            // 
+            this.lblthongbaopnt.AutoSize = true;
+            this.lblthongbaopnt.Location = new System.Drawing.Point(22, 66);
+            this.lblthongbaopnt.Name = "lblthongbaopnt";
+            this.lblthongbaopnt.Size = new System.Drawing.Size(217, 17);
+            this.lblthongbaopnt.TabIndex = 1;
+            this.lblthongbaopnt.Text = "hien thi thong bao phieu nhac tra";
+            // 
+            // lblhienthinv
+            // 
+            this.lblhienthinv.AutoSize = true;
+            this.lblhienthinv.Location = new System.Drawing.Point(22, 31);
+            this.lblhienthinv.Name = "lblhienthinv";
+            this.lblhienthinv.Size = new System.Drawing.Size(120, 17);
+            this.lblhienthinv.TabIndex = 0;
+            this.lblhienthinv.Text = "hien thi nhan vien";
             // 
             // btnthoatpnt
             // 
@@ -334,7 +334,7 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(469, 46);
+            this.label1.Size = new System.Drawing.Size(457, 45);
             this.label1.TabIndex = 3;
             this.label1.Text = "DANH MỤC PHIẾU NHẮC TRẢ";
             // 
@@ -352,32 +352,12 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Dieu khien";
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(141, 47);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(11, 100);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(285, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 4;
             // 
             // button4
             // 
@@ -388,12 +368,32 @@ namespace BTL_QLThuvien_Csharp_Nhom10
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // button3
             // 
-            this.textBox1.Location = new System.Drawing.Point(285, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 4;
+            this.button3.Location = new System.Drawing.Point(11, 100);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(141, 47);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(11, 47);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmPhieuNhacTra
             // 

@@ -1,8 +1,0 @@
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.csproj.AssemblyReference.cache
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.AssemblyInfoInputs.cache
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.AssemblyInfo.cs
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.csproj.CoreCompileInputs.cache
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.RazorAssemblyInfo.cache
-C:\Users\admin\source\repos\My-Csharp_Winform_Application\MvcMovie\obj\Debug\net6.0\MvcMovie.RazorAssemblyInfo.cs
